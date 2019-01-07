@@ -55,6 +55,7 @@
   <ItemGroup>
      <Compile Include="Assets\Script\IgnoreTag.cs" />
      <Compile Include="Assets\Script\NavTargeting.cs" />
+     <Compile Include="Assets\Script\ReloadScene.cs" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>/Users/liamcoombs/Documents/Makers/EndProject/TowerDefence/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
