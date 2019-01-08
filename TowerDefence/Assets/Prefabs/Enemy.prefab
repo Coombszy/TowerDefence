@@ -27,7 +27,7 @@ GameObject:
   - component: {fileID: 195723851068436778}
   - component: {fileID: 114304577133423728}
   - component: {fileID: 65653396064136246}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -122,12 +122,13 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1576508584397734}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: efbe07e8b833247998e8ee79e36a1c2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   TagToIgnore: Enemy
+  PrefabToIgnore: {fileID: 1576508584397734}
 --- !u!114 &114295105565926872
 MonoBehaviour:
   m_ObjectHideFlags: 1

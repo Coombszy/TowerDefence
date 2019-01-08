@@ -4,12 +4,20 @@ using UnityEngine;
 
 public class IgnoreTag : MonoBehaviour {
 	public string TagToIgnore;
+	public GameObject PrefabToIgnore;
+
 	void OnCollisionEnter(Collision collision)
     {
          if (collision.gameObject.tag == TagToIgnore)
         {
-					
-            Physics.IgnoreCollision(collision.gameObject.GetComponent<Collider>(), this.GetComponent<Collider>());
+					//Debug.Log("Boop!");
+            Physics.IgnoreCollision(collision.gameObject.GetComponent<BoxCollider>(), this.gameObject.GetComponent<BoxCollider>());
         }
 	}
+
+	void Start () {
+		Physics.IgnoreCollision(this.gameObject.GetComponent<BoxCollider>(), PrefabToIgnore.GetComponent<BoxCollider>());
+		Physics.IgnoreCollision(this.gameObject.GetComponent<Collider>(), PrefabToIgnore.GetComponent<Collider>());
+		Physics.IgnoreCollision(this.gameObject.GetComponent<Collider>(), PrefabToIgnore.GetComponent<BoxCollider>());
+		}
 }

@@ -327,31 +327,9 @@ Prefab:
       propertyPath: HealthTextBox
       value: 
       objectReference: {fileID: 945738493}
-    - target: {fileID: 1320848633810168, guid: e273213faf3054efc8d8b296ccc9d1bb, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967287
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 65725192860338954, guid: e273213faf3054efc8d8b296ccc9d1bb, type: 2}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e273213faf3054efc8d8b296ccc9d1bb, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &341573048 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1320848633810168, guid: e273213faf3054efc8d8b296ccc9d1bb,
-    type: 2}
-  m_PrefabInternal: {fileID: 248571896}
---- !u!65 &341573049
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 341573048}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &358446233
 GameObject:
   m_ObjectHideFlags: 0
@@ -1086,7 +1064,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyPrefab: {fileID: 1576508584397734, guid: 8dd078ea3b2314c99bc2a36069216365,
     type: 2}
-  Quantity: 100
+  Quantity: 1000
   Offset: 2
   SpawnOnStart: 1
 --- !u!4 &1072084000
