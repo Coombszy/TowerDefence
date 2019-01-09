@@ -4,11 +4,13 @@ using UnityEngine;
 
 
 public class Summoner : MonoBehaviour {
-	public GameObject EnemyPrefab;
+	public GameObject[] EnemyPrefabs;
 	public int Quantity = 5;
 	public float Offset = 2;
 	public bool SpawnOnStart = false;
 	public List<GameObject> SpawnedEnemies = new List<GameObject>();
+
+	private
 	
 	void Start()
 	{
@@ -23,7 +25,7 @@ public class Summoner : MonoBehaviour {
 		Vector3 CurrentLocation = this.transform.position;
 		for(int i = 0; i < Quantity; i++)
 		{
-			SpawnedEnemies.Add(Instantiate(EnemyPrefab, CurrentLocation + new Vector3(Random.Range(-Offset,Offset),0,Random.Range(-Offset,Offset)), Quaternion.identity));
+			SpawnedEnemies.Add(Instantiate(EnemyPrefabs[PickAnEnemy()], CurrentLocation + new Vector3(Random.Range(-Offset,Offset),0,Random.Range(-Offset,Offset)), Quaternion.identity));
 		}
 	}
 
@@ -32,6 +34,22 @@ public class Summoner : MonoBehaviour {
 		foreach(GameObject Enemy in SpawnedEnemies)
 		{
 			Destroy(Enemy,0);
+		}
+	}
+
+	private int PickAnEnemy()
+	{
+		int chance = Random.Range(0,100);
+		if(0> chance && chance <15)
+		{
+			return 2;
+		}
+		else if(15> chance && chance <45)
+		{
+			return 1;
+		}
+		else{
+			return 0;
 		}
 	}
 }

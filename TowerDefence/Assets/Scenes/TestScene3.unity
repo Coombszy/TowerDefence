@@ -98,15 +98,15 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 0.1
-    agentHeight: 0.1
+    agentRadius: 0.05
+    agentHeight: 0.05
     agentSlope: 45
-    agentClimb: 0.4
+    agentClimb: 0.1
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     minRegionArea: 2
     manualCellSize: 0
-    cellSize: 0.033333335
+    cellSize: 0.016666668
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
@@ -1325,9 +1325,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de04fe840ada842aca431f9944843649, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyPrefab: {fileID: 1576508584397734, guid: 8dd078ea3b2314c99bc2a36069216365,
-    type: 2}
-  Quantity: 5
+  EnemyPrefabs:
+  - {fileID: 1576508584397734, guid: 8dd078ea3b2314c99bc2a36069216365, type: 2}
+  - {fileID: 1542305274348592, guid: 058ed2cc1d5da4364b507469d6218aee, type: 2}
+  - {fileID: 1576508584397734, guid: a1dc5fd13dc734af1bd1a9e9ea052964, type: 2}
+  Quantity: 10
   Offset: 3
   SpawnOnStart: 0
   SpawnedEnemies: []
@@ -1894,7 +1896,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 300}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1360657080
@@ -2111,7 +2113,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 200, y: 300}
+  m_AnchoredPosition: {x: 200, y: 0}
   m_SizeDelta: {x: 200, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1727261826
