@@ -8,6 +8,8 @@ TagManager:
   - Wall
   - Tower
   - Floor
+  - Base
+  - Canvas
   layers:
   - Default
   - TransparentFX

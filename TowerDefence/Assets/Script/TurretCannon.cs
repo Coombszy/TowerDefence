@@ -18,11 +18,11 @@ public class TurretCannon : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		Timer += Time.deltaTime;
-		if(this.gameObject.GetComponent<TurretTargeting>().CurrentTarget != null && this.gameObject.GetComponent<TurretTargeting>().TargetAcquired)
+		if(this.gameObject.GetComponent<TurretHandler>().CurrentTarget != null && this.gameObject.GetComponent<TurretHandler>().TargetAcquired)
 		{
 			if(Timer > 1/ShotsPerSecond){
 			Timer = 0;
-			Vector3 targetDir = this.gameObject.GetComponent<TurretTargeting>().CurrentTarget.transform.position - this.gameObject.transform.position;
+			Vector3 targetDir = this.gameObject.GetComponent<TurretHandler>().CurrentTarget.transform.position - this.gameObject.transform.position;
 			float step = TurnSpeed * Time.deltaTime;
 			Vector3 newDir = Vector3.RotateTowards(this.gameObject.transform.forward, targetDir, step, 0.0f);
       //Debug.DrawRay(this.gameObject.transform.position, newDir, Color.red,2);

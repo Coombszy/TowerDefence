@@ -109,5 +109,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Health: 1000
+  Gold: 100
   EnemyTag: Enemy
   HealthTextBox: {fileID: 0}

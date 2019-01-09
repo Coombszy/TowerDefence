@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class BaseHandler : MonoBehaviour {
 
 	public int Health = 1000;
+	public int Gold = 100;
 	public string EnemyTag = "Enemy";
 	public GameObject HealthTextBox;
 

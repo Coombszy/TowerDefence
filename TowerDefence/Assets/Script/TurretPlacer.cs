@@ -8,6 +8,8 @@
         public GameObject[] objectsToSpawn = new GameObject[]{};
         public int TypeNum = 0;
         public GameObject TurretTypeBox;
+        public GameObject PlayerBase;
+        public GameObject GoldStashBox;
         // Use this for initialization
         void Start () {
         
@@ -45,13 +47,22 @@
             Vector3 spawnPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);spawnPosition.y = 0.0f;
             if(isLocationSafe(spawnPosition))
             {
-                Instantiate(objectsToSpawn[Type], spawnPosition, Quaternion.Euler(new Vector3(0, 0, 0)));
+                if(PlayerBase.GetComponent<BaseHandler>().Gold-objectsToSpawn[Type].GetComponent<TurretHandler>().Cost >= 0)
+                {
+                    Instantiate(objectsToSpawn[Type], spawnPosition, Quaternion.Euler(new Vector3(0, 0, 0)));
+                    PlayerBase.GetComponent<BaseHandler>().Gold = PlayerBase.GetComponent<BaseHandler>().Gold-objectsToSpawn[Type].GetComponent<TurretHandler>().Cost;
+                    UpdateGoldStashBox();
+                }
             }
         }
 
         private void UpdateTurretTypeBox()
         {
             TurretTypeBox.GetComponent<Text>().text = "TurrType:"+TypeNum;
+        }
+        public void UpdateGoldStashBox()
+        {
+            GoldStashBox.GetComponent<Text>().text= "GoldStash:"+PlayerBase.GetComponent<BaseHandler>().Gold;
         }
 
         private bool isLocationSafe(Vector3 Location)
@@ -67,10 +78,10 @@
 				    Vector3 directionToTarget = Object.transform.position - Location;
     		        float DistanceToTarget = directionToTarget.sqrMagnitude;
                     float Range;
-                    Range = Object.GetComponent<TurretTargeting>().PlaceRange;
-                    if(objectsToSpawn[TypeNum].GetComponent<TurretTargeting>().PlaceRange > Range)
+                    Range = Object.GetComponent<TurretHandler>().PlaceRange;
+                    if(objectsToSpawn[TypeNum].GetComponent<TurretHandler>().PlaceRange > Range)
                     {
-                        Range = objectsToSpawn[TypeNum].GetComponent<TurretTargeting>().PlaceRange;
+                        Range = objectsToSpawn[TypeNum].GetComponent<TurretHandler>().PlaceRange;
                     }
 				    if (DistanceToTarget < Range)
 				    {
