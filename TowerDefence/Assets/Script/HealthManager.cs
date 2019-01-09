@@ -8,7 +8,7 @@ public class HealthManager : MonoBehaviour {
 	
 	public void DealDamage(int Damage)
 	{
-		Health =- Damage;
+		Health -= Damage;
 		if(Health <1)
 		{
 			Destroy(this.gameObject);

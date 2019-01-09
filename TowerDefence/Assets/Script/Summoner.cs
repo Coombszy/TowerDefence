@@ -8,8 +8,7 @@ public class Summoner : MonoBehaviour {
 	public int Quantity = 5;
 	public float Offset = 2;
 	public bool SpawnOnStart = false;
-
-	private List<GameObject> SpawnedEnemies = new List<GameObject>();
+	public List<GameObject> SpawnedEnemies = new List<GameObject>();
 	
 	void Start()
 	{
