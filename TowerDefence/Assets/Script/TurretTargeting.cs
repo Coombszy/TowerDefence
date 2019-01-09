@@ -6,6 +6,7 @@ using UnityEngine;
 public class TurretTargeting : MonoBehaviour {
 
 	public int Range = 10;
+	public float PlaceRange = 0.4f;
 	public GameObject Summoner = null;
 	public bool TargetAcquired = false;
 	public GameObject CurrentTarget = null;
@@ -49,7 +50,6 @@ public class TurretTargeting : MonoBehaviour {
     		float DistanceToTarget = directionToTarget.sqrMagnitude;
 				if (DistanceToTarget < BestTargetRange && DistanceToTarget < Range)
 				{
-					//Debug.Log("InRange!");
 					BestTarget = Enemy;
 					BestTargetRange = DistanceToTarget;
 				}

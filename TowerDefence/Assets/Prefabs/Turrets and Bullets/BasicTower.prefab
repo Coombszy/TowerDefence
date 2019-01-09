@@ -25,8 +25,8 @@ GameObject:
   - component: {fileID: 114743597425667430}
   - component: {fileID: 114439769565577160}
   m_Layer: 11
-  m_Name: Tower
-  m_TagString: Untagged
+  m_Name: BasicTower
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,6 +112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Range: 7
+  PlaceRange: 0.4
   Summoner: {fileID: 0}
   TargetAcquired: 0
   CurrentTarget: {fileID: 0}
