@@ -40,11 +40,11 @@ public class Summoner : MonoBehaviour {
 	private int PickAnEnemy()
 	{
 		int chance = Random.Range(0,100);
-		if(0> chance && chance <15)
+		if(0 > chance && chance <20)
 		{
 			return 2;
 		}
-		else if(15> chance && chance <45)
+		else if(20> chance && chance <45)
 		{
 			return 1;
 		}

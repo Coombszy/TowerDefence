@@ -59,6 +59,7 @@
      <Compile Include="Assets\Script\HealthManager.cs" />
      <Compile Include="Assets\Script\NavTargeting.cs" />
      <Compile Include="Assets\Script\ReloadScene.cs" />
+     <Compile Include="Assets\Script\RoundHandler.cs" />
      <Compile Include="Assets\Script\SpecialEffects.cs" />
      <Compile Include="Assets\Script\Summoner.cs" />
      <Compile Include="Assets\Script\TurretCannon.cs" />
