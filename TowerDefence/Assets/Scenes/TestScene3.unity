@@ -2045,8 +2045,8 @@ MonoBehaviour:
   - {fileID: 1576508584397734, guid: a1dc5fd13dc734af1bd1a9e9ea052964, type: 2}
   BaseHazardCount: 10
   spawnWait: 0.015
-  startWait: 4
-  waveWait: 12
+  startWait: 3
+  waveWait: 10
   Offset: 2.5
   MultiRate: 10
 --- !u!1 &1089959771

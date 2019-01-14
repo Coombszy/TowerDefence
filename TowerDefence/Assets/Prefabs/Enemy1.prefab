@@ -140,6 +140,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Health: 100
   GoldReward: 5
+  DamageIDeal: 25
 --- !u!195 &195723851068436778
 NavMeshAgent:
   m_ObjectHideFlags: 1

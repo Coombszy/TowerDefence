@@ -6,6 +6,7 @@ public class HealthManager : MonoBehaviour {
 
 	public int Health = 100;
 	public int GoldReward = 15;
+	public int DamageIDeal = 15;
 	
 	public void DealDamage(int Damage)
 	{

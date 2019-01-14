@@ -8,7 +8,6 @@ public class TurretHandler : MonoBehaviour {
 	public int Cost = 30;
 	public int Range = 10;
 	public float PlaceRange = 0.4f;
-	public GameObject Summoner = null;
 	public bool TargetAcquired = false;
 	public GameObject CurrentTarget = null;
 

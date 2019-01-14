@@ -141,6 +141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Health: 1500
   GoldReward: 10
+  DamageIDeal: 100
 --- !u!114 &114483754961703890
 MonoBehaviour:
   m_ObjectHideFlags: 1

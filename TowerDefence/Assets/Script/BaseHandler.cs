@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class BaseHandler : MonoBehaviour {
 
@@ -18,13 +19,17 @@ public class BaseHandler : MonoBehaviour {
     {
          if (collision.gameObject.tag == EnemyTag)
         {
-            Health -= 1;
+            Health -= collision.gameObject.GetComponent<HealthManager>().DamageIDeal;
 						HealthTextBox.GetComponent<Text>().text = "HP:"+Health;
 						Destroy(collision.gameObject);
         }
+				if(Health <= 0)
+				{
+					EndGame();
+				}
 	}
-	public void DoSomething()
+	public void EndGame()
 	{
-		
+		SceneManager.LoadScene (2);
 	}
 }

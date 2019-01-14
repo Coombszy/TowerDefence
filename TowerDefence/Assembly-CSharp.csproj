@@ -55,11 +55,14 @@
   <ItemGroup>
      <Compile Include="Assets\Script\BaseHandler.cs" />
      <Compile Include="Assets\Script\Bullet.cs" />
+     <Compile Include="Assets\Script\ExitApplication.cs" />
      <Compile Include="Assets\Script\FreezeRotation.cs" />
      <Compile Include="Assets\Script\HealthManager.cs" />
+     <Compile Include="Assets\Script\LoadSceneOnClick.cs" />
      <Compile Include="Assets\Script\NavTargeting.cs" />
      <Compile Include="Assets\Script\Old\Summoner.cs" />
      <Compile Include="Assets\Script\ReloadScene.cs" />
+     <Compile Include="Assets\Script\Rotate.cs" />
      <Compile Include="Assets\Script\RoundController.cs" />
      <Compile Include="Assets\Script\SpecialEffects.cs" />
      <Compile Include="Assets\Script\TurretCannon.cs" />
