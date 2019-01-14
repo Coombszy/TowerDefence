@@ -23,4 +23,8 @@ public class BaseHandler : MonoBehaviour {
 						Destroy(collision.gameObject);
         }
 	}
+	public void DoSomething()
+	{
+		
+	}
 }
