@@ -53,6 +53,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Lava_Flowing_Shader\Scripts\ScrollingUVs_Layers.cs" />
      <Compile Include="Assets\Script\BaseHandler.cs" />
      <Compile Include="Assets\Script\Bullet.cs" />
      <Compile Include="Assets\Script\ExitApplication.cs" />
@@ -69,6 +70,11 @@
      <Compile Include="Assets\Script\TurretCannon.cs" />
      <Compile Include="Assets\Script\TurretHandler.cs" />
      <Compile Include="Assets\Script\TurretPlacer.cs" />
+     <None Include="Assets\Lava_Flowing_Shader\Shaders\Unlit_Lava_Simple.shader" />
+     <None Include="Assets\Lava_Flowing_Shader\Shaders\Diffuse_Lava_Distort.shader" />
+     <None Include="Assets\Lava_Flowing_Shader\Shaders\Unlit_Lava_Distort.shader" />
+     <None Include="Assets\Lava_Flowing_Shader\Shaders\Unlit_Lava_Distort_Transparent.shader" />
+     <None Include="Assets\Lava_Flowing_Shader\ReadMe.txt" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>/Users/liamcoombs/Documents/Makers/EndProject/TowerDefence/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>

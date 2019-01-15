@@ -30,8 +30,9 @@ public class RoundController : MonoBehaviour
 			Round++;
             for (int i = 0; i < hazardCount; i++)
             {
-				Instantiate(EnemyPrefabs[PickAnEnemy()], CurrentLocation + new Vector3(Random.Range(-Offset,Offset),0,Random.Range(-Offset,Offset)), Quaternion.identity);
-                yield return new WaitForSeconds (spawnWait);
+				GameObject Enemy = Instantiate(EnemyPrefabs[PickAnEnemy()], CurrentLocation + new Vector3(Random.Range(-Offset,Offset),0,Random.Range(-Offset,Offset)), Quaternion.identity);
+                Enemy.GetComponent<HealthManager>().Health = Enemy.GetComponent<HealthManager>().Health + Mathf.FloorToInt(Enemy.GetComponent<HealthManager>().Health * (Round/MultiRate));
+				yield return new WaitForSeconds (spawnWait);
             }
 			hazardCount = Mathf.FloorToInt(Mathf.Pow(BaseHazardCount ,(1f+(Round/10f))));
             yield return new WaitForSeconds (waveWait);
