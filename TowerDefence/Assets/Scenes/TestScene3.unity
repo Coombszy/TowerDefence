@@ -129,6 +129,7 @@ GameObject:
   - component: {fileID: 97115221}
   - component: {fileID: 97115220}
   - component: {fileID: 97115219}
+  - component: {fileID: 97115223}
   m_Layer: 0
   m_Name: Path (3)
   m_TagString: Floor
@@ -163,7 +164,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 62752644d94154c52a8ffaee15a909bd, type: 2}
+  - {fileID: 1821659916}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -203,6 +204,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &97115223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 97115218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f7dd2158042245d8931c9dfcbde35c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texture: {fileID: 2800000, guid: cd4f831376722b54bbadd59ef7c6c744, type: 3}
+  textureToMeshZ: 8
 --- !u!1 &100309050
 GameObject:
   m_ObjectHideFlags: 0
@@ -214,6 +228,7 @@ GameObject:
   - component: {fileID: 100309053}
   - component: {fileID: 100309052}
   - component: {fileID: 100309051}
+  - component: {fileID: 100309055}
   m_Layer: 0
   m_Name: Path (7)
   m_TagString: Floor
@@ -248,7 +263,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 62752644d94154c52a8ffaee15a909bd, type: 2}
+  - {fileID: 844615930}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -288,6 +303,174 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &100309055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 100309050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f7dd2158042245d8931c9dfcbde35c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texture: {fileID: 2800000, guid: cd4f831376722b54bbadd59ef7c6c744, type: 3}
+  textureToMeshZ: 8
+--- !u!21 &129524456
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: floor (Instance) (Instance) (Instance)
+  m_Shader: {fileID: 4, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: af579c7a89d15d24eb8c925a43a236cf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: f5d1de47f0f760544a5596ceb8cc895f, type: 3}
+        m_Scale: {x: 2.5, y: 1.25}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Shininess: 0.037224755
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecColor: {r: 0.31617647, g: 0.24030025, b: 0.19063582, a: 1}
+--- !u!21 &130446191
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: floor (Instance) (Instance) (Instance)
+  m_Shader: {fileID: 4, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: af579c7a89d15d24eb8c925a43a236cf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: f5d1de47f0f760544a5596ceb8cc895f, type: 3}
+        m_Scale: {x: 1.25, y: 3.75}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Shininess: 0.037224755
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecColor: {r: 0.31617647, g: 0.24030025, b: 0.19063582, a: 1}
+--- !u!21 &192479082
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: floor (Instance) (Instance) (Instance)
+  m_Shader: {fileID: 4, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: af579c7a89d15d24eb8c925a43a236cf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: f5d1de47f0f760544a5596ceb8cc895f, type: 3}
+        m_Scale: {x: 1.25, y: 3.75}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Shininess: 0.037224755
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecColor: {r: 0.31617647, g: 0.24030025, b: 0.19063582, a: 1}
+--- !u!21 &227792789
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: floor (Instance) (Instance) (Instance)
+  m_Shader: {fileID: 4, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: af579c7a89d15d24eb8c925a43a236cf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: f5d1de47f0f760544a5596ceb8cc895f, type: 3}
+        m_Scale: {x: 1.25, y: 3.75}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Shininess: 0.037224755
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecColor: {r: 0.31617647, g: 0.24030025, b: 0.19063582, a: 1}
+--- !u!21 &233123186
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: floor (Instance) (Instance) (Instance)
+  m_Shader: {fileID: 4, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: af579c7a89d15d24eb8c925a43a236cf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: f5d1de47f0f760544a5596ceb8cc895f, type: 3}
+        m_Scale: {x: 5, y: 1.25}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Shininess: 0.037224755
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecColor: {r: 0.31617647, g: 0.24030025, b: 0.19063582, a: 1}
 --- !u!1001 &248571896
 Prefab:
   m_ObjectHideFlags: 0
@@ -431,6 +614,99 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: -90.00001}
+--- !u!21 &263276891
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: floor (Instance) (Instance) (Instance)
+  m_Shader: {fileID: 4, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: af579c7a89d15d24eb8c925a43a236cf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: f5d1de47f0f760544a5596ceb8cc895f, type: 3}
+        m_Scale: {x: 2.5, y: 1.25}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Shininess: 0.037224755
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecColor: {r: 0.31617647, g: 0.24030025, b: 0.19063582, a: 1}
+--- !u!21 &279494273
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: floor (Instance) (Instance) (Instance)
+  m_Shader: {fileID: 4, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: af579c7a89d15d24eb8c925a43a236cf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: f5d1de47f0f760544a5596ceb8cc895f, type: 3}
+        m_Scale: {x: 5, y: 1.25}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Shininess: 0.037224755
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecColor: {r: 0.31617647, g: 0.24030025, b: 0.19063582, a: 1}
+--- !u!21 &296796562
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: floor (Instance) (Instance) (Instance)
+  m_Shader: {fileID: 4, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: af579c7a89d15d24eb8c925a43a236cf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: f5d1de47f0f760544a5596ceb8cc895f, type: 3}
+        m_Scale: {x: 1.25, y: 2.5}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Shininess: 0.037224755
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecColor: {r: 0.31617647, g: 0.24030025, b: 0.19063582, a: 1}
 --- !u!1 &358446233
 GameObject:
   m_ObjectHideFlags: 0
@@ -442,6 +718,7 @@ GameObject:
   - component: {fileID: 358446236}
   - component: {fileID: 358446235}
   - component: {fileID: 358446234}
+  - component: {fileID: 358446238}
   m_Layer: 0
   m_Name: Path (5)
   m_TagString: Floor
@@ -476,7 +753,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 62752644d94154c52a8ffaee15a909bd, type: 2}
+  - {fileID: 130446191}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -516,6 +793,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &358446238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 358446233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f7dd2158042245d8931c9dfcbde35c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texture: {fileID: 2800000, guid: cd4f831376722b54bbadd59ef7c6c744, type: 3}
+  textureToMeshZ: 8
 --- !u!1 &364898411
 GameObject:
   m_ObjectHideFlags: 0
@@ -549,7 +839,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.8228907, g: 0.84040385, b: 0.8679245, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -666,6 +956,7 @@ GameObject:
   - component: {fileID: 428011446}
   - component: {fileID: 428011445}
   - component: {fileID: 428011444}
+  - component: {fileID: 428011448}
   m_Layer: 0
   m_Name: Path (13)
   m_TagString: Floor
@@ -700,7 +991,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 62752644d94154c52a8ffaee15a909bd, type: 2}
+  - {fileID: 192479082}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -740,6 +1031,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &428011448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 428011443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f7dd2158042245d8931c9dfcbde35c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texture: {fileID: 2800000, guid: cd4f831376722b54bbadd59ef7c6c744, type: 3}
+  textureToMeshZ: 8
 --- !u!1 &460388517
 GameObject:
   m_ObjectHideFlags: 0
@@ -787,7 +1091,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 0b0420363cd6144b594f063ed7963716, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -838,6 +1142,7 @@ GameObject:
   - component: {fileID: 468307299}
   - component: {fileID: 468307298}
   - component: {fileID: 468307297}
+  - component: {fileID: 468307301}
   m_Layer: 0
   m_Name: Path (19)
   m_TagString: Floor
@@ -872,7 +1177,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 62752644d94154c52a8ffaee15a909bd, type: 2}
+  - {fileID: 1272634858}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -912,6 +1217,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &468307301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 468307296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f7dd2158042245d8931c9dfcbde35c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texture: {fileID: 2800000, guid: cd4f831376722b54bbadd59ef7c6c744, type: 3}
+  textureToMeshZ: 8
 --- !u!1 &483000836
 GameObject:
   m_ObjectHideFlags: 0
@@ -998,6 +1316,7 @@ GameObject:
   - component: {fileID: 483095768}
   - component: {fileID: 483095767}
   - component: {fileID: 483095766}
+  - component: {fileID: 483095770}
   m_Layer: 0
   m_Name: Path (10)
   m_TagString: Floor
@@ -1032,7 +1351,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 62752644d94154c52a8ffaee15a909bd, type: 2}
+  - {fileID: 227792789}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1072,6 +1391,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &483095770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 483095765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f7dd2158042245d8931c9dfcbde35c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texture: {fileID: 2800000, guid: cd4f831376722b54bbadd59ef7c6c744, type: 3}
+  textureToMeshZ: 8
 --- !u!1 &542911610
 GameObject:
   m_ObjectHideFlags: 0
@@ -1083,6 +1415,7 @@ GameObject:
   - component: {fileID: 542911613}
   - component: {fileID: 542911612}
   - component: {fileID: 542911611}
+  - component: {fileID: 542911615}
   m_Layer: 0
   m_Name: Path (8)
   m_TagString: Floor
@@ -1117,7 +1450,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 62752644d94154c52a8ffaee15a909bd, type: 2}
+  - {fileID: 1887628669}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1157,6 +1490,50 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &542911615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 542911610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f7dd2158042245d8931c9dfcbde35c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texture: {fileID: 2800000, guid: cd4f831376722b54bbadd59ef7c6c744, type: 3}
+  textureToMeshZ: 8
+--- !u!21 &558890518
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: floor (Instance) (Instance) (Instance)
+  m_Shader: {fileID: 4, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: af579c7a89d15d24eb8c925a43a236cf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: f5d1de47f0f760544a5596ceb8cc895f, type: 3}
+        m_Scale: {x: 3.75, y: 1.25}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Shininess: 0.037224755
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecColor: {r: 0.31617647, g: 0.24030025, b: 0.19063582, a: 1}
 --- !u!1 &567281108
 GameObject:
   m_ObjectHideFlags: 0
@@ -1168,6 +1545,7 @@ GameObject:
   - component: {fileID: 567281111}
   - component: {fileID: 567281110}
   - component: {fileID: 567281109}
+  - component: {fileID: 567281113}
   m_Layer: 0
   m_Name: Path (23)
   m_TagString: Floor
@@ -1202,7 +1580,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 62752644d94154c52a8ffaee15a909bd, type: 2}
+  - {fileID: 129524456}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1242,6 +1620,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &567281113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 567281108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f7dd2158042245d8931c9dfcbde35c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texture: {fileID: 2800000, guid: cd4f831376722b54bbadd59ef7c6c744, type: 3}
+  textureToMeshZ: 8
 --- !u!1 &567348990
 GameObject:
   m_ObjectHideFlags: 0
@@ -1292,7 +1683,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 0b0420363cd6144b594f063ed7963716, type: 2}
+  - {fileID: 2100000, guid: 893960384de673345a82517892b28bc7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1334,6 +1725,68 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &569083482
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: floor (Instance) (Instance) (Instance)
+  m_Shader: {fileID: 4, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: af579c7a89d15d24eb8c925a43a236cf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: f5d1de47f0f760544a5596ceb8cc895f, type: 3}
+        m_Scale: {x: 1.25, y: 3.75}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Shininess: 0.037224755
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecColor: {r: 0.31617647, g: 0.24030025, b: 0.19063582, a: 1}
+--- !u!21 &607223898
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: floor (Instance) (Instance) (Instance)
+  m_Shader: {fileID: 4, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: af579c7a89d15d24eb8c925a43a236cf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: f5d1de47f0f760544a5596ceb8cc895f, type: 3}
+        m_Scale: {x: 1.25, y: 6.25}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Shininess: 0.037224755
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecColor: {r: 0.31617647, g: 0.24030025, b: 0.19063582, a: 1}
 --- !u!1 &719553180
 GameObject:
   m_ObjectHideFlags: 0
@@ -1345,6 +1798,7 @@ GameObject:
   - component: {fileID: 719553183}
   - component: {fileID: 719553182}
   - component: {fileID: 719553181}
+  - component: {fileID: 719553185}
   m_Layer: 0
   m_Name: Path (15)
   m_TagString: Floor
@@ -1379,7 +1833,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 62752644d94154c52a8ffaee15a909bd, type: 2}
+  - {fileID: 607223898}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1419,6 +1873,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &719553185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 719553180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f7dd2158042245d8931c9dfcbde35c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texture: {fileID: 2800000, guid: cd4f831376722b54bbadd59ef7c6c744, type: 3}
+  textureToMeshZ: 8
 --- !u!1 &838576152
 GameObject:
   m_ObjectHideFlags: 0
@@ -1452,9 +1919,71 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 289, y: -100}
+  m_AnchoredPosition: {x: 289, y: -20}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!21 &844615930
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: floor (Instance) (Instance) (Instance)
+  m_Shader: {fileID: 4, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: af579c7a89d15d24eb8c925a43a236cf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: f5d1de47f0f760544a5596ceb8cc895f, type: 3}
+        m_Scale: {x: 6.25, y: 1.25}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Shininess: 0.037224755
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecColor: {r: 0.31617647, g: 0.24030025, b: 0.19063582, a: 1}
+--- !u!21 &856804792
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: floor (Instance) (Instance) (Instance)
+  m_Shader: {fileID: 4, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: af579c7a89d15d24eb8c925a43a236cf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: f5d1de47f0f760544a5596ceb8cc895f, type: 3}
+        m_Scale: {x: 1.25, y: 6.25}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Shininess: 0.037224755
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecColor: {r: 0.31617647, g: 0.24030025, b: 0.19063582, a: 1}
 --- !u!1 &857272474
 GameObject:
   m_ObjectHideFlags: 0
@@ -1466,6 +1995,7 @@ GameObject:
   - component: {fileID: 857272477}
   - component: {fileID: 857272476}
   - component: {fileID: 857272475}
+  - component: {fileID: 857272479}
   m_Layer: 0
   m_Name: Path (18)
   m_TagString: Floor
@@ -1500,7 +2030,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 62752644d94154c52a8ffaee15a909bd, type: 2}
+  - {fileID: 263276891}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1540,6 +2070,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &857272479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 857272474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f7dd2158042245d8931c9dfcbde35c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texture: {fileID: 2800000, guid: cd4f831376722b54bbadd59ef7c6c744, type: 3}
+  textureToMeshZ: 8
 --- !u!1001 &874962769
 Prefab:
   m_ObjectHideFlags: 0
@@ -1763,6 +2306,37 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 945738493}
   m_CullTransparentMesh: 0
+--- !u!21 &957951774
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: floor (Instance) (Instance) (Instance)
+  m_Shader: {fileID: 4, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: af579c7a89d15d24eb8c925a43a236cf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: f5d1de47f0f760544a5596ceb8cc895f, type: 3}
+        m_Scale: {x: 6.875, y: 1.25}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Shininess: 0.037224755
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecColor: {r: 0.31617647, g: 0.24030025, b: 0.19063582, a: 1}
 --- !u!1 &966608584
 GameObject:
   m_ObjectHideFlags: 0
@@ -1774,6 +2348,7 @@ GameObject:
   - component: {fileID: 966608587}
   - component: {fileID: 966608586}
   - component: {fileID: 966608585}
+  - component: {fileID: 966608589}
   m_Layer: 0
   m_Name: Path (12)
   m_TagString: Floor
@@ -1808,7 +2383,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 62752644d94154c52a8ffaee15a909bd, type: 2}
+  - {fileID: 2070495428}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1848,6 +2423,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: -20, y: 0, z: 0}
+--- !u!114 &966608589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 966608584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f7dd2158042245d8931c9dfcbde35c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texture: {fileID: 2800000, guid: cd4f831376722b54bbadd59ef7c6c744, type: 3}
+  textureToMeshZ: 8
 --- !u!1 &1000787101
 GameObject:
   m_ObjectHideFlags: 0
@@ -1873,7 +2461,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.77682555, b: 0.3915094, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -1925,6 +2513,7 @@ GameObject:
   - component: {fileID: 1071834979}
   - component: {fileID: 1071834978}
   - component: {fileID: 1071834977}
+  - component: {fileID: 1071834981}
   m_Layer: 0
   m_Name: Path (22)
   m_TagString: Floor
@@ -1959,7 +2548,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 62752644d94154c52a8ffaee15a909bd, type: 2}
+  - {fileID: 1387366440}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1999,6 +2588,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1071834981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1071834976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f7dd2158042245d8931c9dfcbde35c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texture: {fileID: 2800000, guid: cd4f831376722b54bbadd59ef7c6c744, type: 3}
+  textureToMeshZ: 8
 --- !u!1 &1072083998
 GameObject:
   m_ObjectHideFlags: 0
@@ -2045,7 +2647,7 @@ MonoBehaviour:
   - {fileID: 1576508584397734, guid: a1dc5fd13dc734af1bd1a9e9ea052964, type: 2}
   BaseHazardCount: 10
   spawnWait: 0.015
-  startWait: 3
+  startWait: 2
   waveWait: 10
   Offset: 2.5
   MultiRate: 10
@@ -2060,6 +2662,7 @@ GameObject:
   - component: {fileID: 1089959774}
   - component: {fileID: 1089959773}
   - component: {fileID: 1089959772}
+  - component: {fileID: 1089959776}
   m_Layer: 0
   m_Name: Path (24)
   m_TagString: Floor
@@ -2094,7 +2697,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 62752644d94154c52a8ffaee15a909bd, type: 2}
+  - {fileID: 233123186}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2134,6 +2737,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1089959776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1089959771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f7dd2158042245d8931c9dfcbde35c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texture: {fileID: 2800000, guid: cd4f831376722b54bbadd59ef7c6c744, type: 3}
+  textureToMeshZ: 8
 --- !u!1 &1098939267
 GameObject:
   m_ObjectHideFlags: 0
@@ -2145,6 +2761,7 @@ GameObject:
   - component: {fileID: 1098939270}
   - component: {fileID: 1098939269}
   - component: {fileID: 1098939268}
+  - component: {fileID: 1098939272}
   m_Layer: 0
   m_Name: Path (21)
   m_TagString: Floor
@@ -2179,7 +2796,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 62752644d94154c52a8ffaee15a909bd, type: 2}
+  - {fileID: 1869673419}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2219,6 +2836,50 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1098939272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1098939267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f7dd2158042245d8931c9dfcbde35c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texture: {fileID: 2800000, guid: cd4f831376722b54bbadd59ef7c6c744, type: 3}
+  textureToMeshZ: 8
+--- !u!21 &1105001186
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: floor (Instance) (Instance) (Instance)
+  m_Shader: {fileID: 4, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: af579c7a89d15d24eb8c925a43a236cf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: f5d1de47f0f760544a5596ceb8cc895f, type: 3}
+        m_Scale: {x: 6.875, y: 1.25}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Shininess: 0.037224755
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecColor: {r: 0.31617647, g: 0.24030025, b: 0.19063582, a: 1}
 --- !u!1 &1120942476
 GameObject:
   m_ObjectHideFlags: 0
@@ -2230,6 +2891,7 @@ GameObject:
   - component: {fileID: 1120942479}
   - component: {fileID: 1120942478}
   - component: {fileID: 1120942477}
+  - component: {fileID: 1120942481}
   m_Layer: 0
   m_Name: Path (6)
   m_TagString: Floor
@@ -2264,7 +2926,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 62752644d94154c52a8ffaee15a909bd, type: 2}
+  - {fileID: 569083482}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2304,6 +2966,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1120942481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1120942476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f7dd2158042245d8931c9dfcbde35c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texture: {fileID: 2800000, guid: cd4f831376722b54bbadd59ef7c6c744, type: 3}
+  textureToMeshZ: 8
 --- !u!1 &1158864375
 GameObject:
   m_ObjectHideFlags: 0
@@ -2402,6 +3077,7 @@ GameObject:
   - component: {fileID: 1184274753}
   - component: {fileID: 1184274752}
   - component: {fileID: 1184274751}
+  - component: {fileID: 1184274755}
   m_Layer: 0
   m_Name: Path (2)
   m_TagString: Floor
@@ -2436,7 +3112,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 62752644d94154c52a8ffaee15a909bd, type: 2}
+  - {fileID: 296796562}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2476,6 +3152,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1184274755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1184274750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f7dd2158042245d8931c9dfcbde35c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texture: {fileID: 2800000, guid: cd4f831376722b54bbadd59ef7c6c744, type: 3}
+  textureToMeshZ: 8
 --- !u!1 &1184658424
 GameObject:
   m_ObjectHideFlags: 0
@@ -2487,6 +3176,7 @@ GameObject:
   - component: {fileID: 1184658427}
   - component: {fileID: 1184658426}
   - component: {fileID: 1184658425}
+  - component: {fileID: 1184658429}
   m_Layer: 0
   m_Name: Path (11)
   m_TagString: Floor
@@ -2521,7 +3211,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 62752644d94154c52a8ffaee15a909bd, type: 2}
+  - {fileID: 1399991459}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2561,6 +3251,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1184658429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1184658424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f7dd2158042245d8931c9dfcbde35c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texture: {fileID: 2800000, guid: cd4f831376722b54bbadd59ef7c6c744, type: 3}
+  textureToMeshZ: 8
 --- !u!1 &1190722691
 GameObject:
   m_ObjectHideFlags: 0
@@ -2648,6 +3351,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+--- !u!21 &1272634858
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: floor (Instance) (Instance) (Instance)
+  m_Shader: {fileID: 4, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: af579c7a89d15d24eb8c925a43a236cf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: f5d1de47f0f760544a5596ceb8cc895f, type: 3}
+        m_Scale: {x: 3.75, y: 1.25}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Shininess: 0.037224755
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecColor: {r: 0.31617647, g: 0.24030025, b: 0.19063582, a: 1}
 --- !u!1 &1342281866
 GameObject:
   m_ObjectHideFlags: 0
@@ -2735,6 +3469,99 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &1369403469
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: floor (Instance) (Instance) (Instance)
+  m_Shader: {fileID: 4, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: af579c7a89d15d24eb8c925a43a236cf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: f5d1de47f0f760544a5596ceb8cc895f, type: 3}
+        m_Scale: {x: 1.25, y: 3.75}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Shininess: 0.037224755
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecColor: {r: 0.31617647, g: 0.24030025, b: 0.19063582, a: 1}
+--- !u!21 &1387366440
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: floor (Instance) (Instance) (Instance)
+  m_Shader: {fileID: 4, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: af579c7a89d15d24eb8c925a43a236cf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: f5d1de47f0f760544a5596ceb8cc895f, type: 3}
+        m_Scale: {x: 1.25, y: 2.5}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Shininess: 0.037224755
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecColor: {r: 0.31617647, g: 0.24030025, b: 0.19063582, a: 1}
+--- !u!21 &1399991459
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: floor (Instance) (Instance) (Instance)
+  m_Shader: {fileID: 4, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: af579c7a89d15d24eb8c925a43a236cf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: f5d1de47f0f760544a5596ceb8cc895f, type: 3}
+        m_Scale: {x: 1.25, y: 6.25}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Shininess: 0.037224755
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecColor: {r: 0.31617647, g: 0.24030025, b: 0.19063582, a: 1}
 --- !u!1 &1420010932
 GameObject:
   m_ObjectHideFlags: 0
@@ -2746,6 +3573,7 @@ GameObject:
   - component: {fileID: 1420010935}
   - component: {fileID: 1420010934}
   - component: {fileID: 1420010933}
+  - component: {fileID: 1420010937}
   m_Layer: 0
   m_Name: Path (4)
   m_TagString: Floor
@@ -2780,7 +3608,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 62752644d94154c52a8ffaee15a909bd, type: 2}
+  - {fileID: 1623756783}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2820,6 +3648,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1420010937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1420010932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f7dd2158042245d8931c9dfcbde35c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texture: {fileID: 2800000, guid: cd4f831376722b54bbadd59ef7c6c744, type: 3}
+  textureToMeshZ: 8
 --- !u!1 &1487193880
 GameObject:
   m_ObjectHideFlags: 0
@@ -2831,6 +3672,7 @@ GameObject:
   - component: {fileID: 1487193883}
   - component: {fileID: 1487193882}
   - component: {fileID: 1487193881}
+  - component: {fileID: 1487193885}
   m_Layer: 0
   m_Name: Path (25)
   m_TagString: Floor
@@ -2865,7 +3707,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 62752644d94154c52a8ffaee15a909bd, type: 2}
+  - {fileID: 856804792}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2905,6 +3747,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1487193885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1487193880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f7dd2158042245d8931c9dfcbde35c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texture: {fileID: 2800000, guid: cd4f831376722b54bbadd59ef7c6c744, type: 3}
+  textureToMeshZ: 8
 --- !u!1 &1586178938
 GameObject:
   m_ObjectHideFlags: 0
@@ -2916,6 +3771,7 @@ GameObject:
   - component: {fileID: 1586178941}
   - component: {fileID: 1586178940}
   - component: {fileID: 1586178939}
+  - component: {fileID: 1586178943}
   m_Layer: 0
   m_Name: Path (14)
   m_TagString: Floor
@@ -2950,7 +3806,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 62752644d94154c52a8ffaee15a909bd, type: 2}
+  - {fileID: 558890518}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2990,6 +3846,50 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1586178943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1586178938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f7dd2158042245d8931c9dfcbde35c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texture: {fileID: 2800000, guid: cd4f831376722b54bbadd59ef7c6c744, type: 3}
+  textureToMeshZ: 8
+--- !u!21 &1623756783
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: floor (Instance) (Instance) (Instance)
+  m_Shader: {fileID: 4, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: af579c7a89d15d24eb8c925a43a236cf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: f5d1de47f0f760544a5596ceb8cc895f, type: 3}
+        m_Scale: {x: 6.25, y: 1.25}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Shininess: 0.037224755
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecColor: {r: 0.31617647, g: 0.24030025, b: 0.19063582, a: 1}
 --- !u!1 &1727261824
 GameObject:
   m_ObjectHideFlags: 0
@@ -3115,7 +4015,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: a61a8e363679c4f1c8bb8177785613ad, type: 2}
+  - {fileID: 2100000, guid: a4d708ac6deec4297978b80f16c8d35d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3152,7 +4052,7 @@ Transform:
   m_GameObject: {fileID: 1732236971}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 4.41}
-  m_LocalScale: {x: 1, y: 1, z: 3}
+  m_LocalScale: {x: 2, y: 1, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -3168,6 +4068,7 @@ GameObject:
   - component: {fileID: 1769925191}
   - component: {fileID: 1769925190}
   - component: {fileID: 1769925189}
+  - component: {fileID: 1769925194}
   m_Layer: 0
   m_Name: Path (26)
   m_TagString: Floor
@@ -3202,7 +4103,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 62752644d94154c52a8ffaee15a909bd, type: 2}
+  - {fileID: 279494273}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3242,6 +4143,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1769925194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1769925188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f7dd2158042245d8931c9dfcbde35c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texture: {fileID: 2800000, guid: cd4f831376722b54bbadd59ef7c6c744, type: 3}
+  textureToMeshZ: 8
 --- !u!1 &1787713719
 GameObject:
   m_ObjectHideFlags: 0
@@ -3253,6 +4167,7 @@ GameObject:
   - component: {fileID: 1787713722}
   - component: {fileID: 1787713721}
   - component: {fileID: 1787713720}
+  - component: {fileID: 1787713724}
   m_Layer: 0
   m_Name: Path (28)
   m_TagString: Floor
@@ -3287,7 +4202,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 62752644d94154c52a8ffaee15a909bd, type: 2}
+  - {fileID: 2103370047}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3327,6 +4242,81 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1787713724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1787713719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f7dd2158042245d8931c9dfcbde35c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texture: {fileID: 2800000, guid: cd4f831376722b54bbadd59ef7c6c744, type: 3}
+  textureToMeshZ: 8
+--- !u!21 &1821659916
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: floor (Instance) (Instance) (Instance)
+  m_Shader: {fileID: 4, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: af579c7a89d15d24eb8c925a43a236cf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: f5d1de47f0f760544a5596ceb8cc895f, type: 3}
+        m_Scale: {x: 6.25, y: 1.25}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Shininess: 0.037224755
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecColor: {r: 0.31617647, g: 0.24030025, b: 0.19063582, a: 1}
+--- !u!21 &1869673419
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: floor (Instance) (Instance) (Instance)
+  m_Shader: {fileID: 4, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: af579c7a89d15d24eb8c925a43a236cf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: f5d1de47f0f760544a5596ceb8cc895f, type: 3}
+        m_Scale: {x: 1.25, y: 2.5}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Shininess: 0.037224755
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecColor: {r: 0.31617647, g: 0.24030025, b: 0.19063582, a: 1}
 --- !u!1 &1882447020
 GameObject:
   m_ObjectHideFlags: 0
@@ -3441,6 +4431,37 @@ MonoBehaviour:
   TurretTypeBox: {fileID: 483000836}
   PlayerBase: {fileID: 92376973}
   GoldStashBox: {fileID: 1727261824}
+--- !u!21 &1887628669
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: floor (Instance) (Instance) (Instance)
+  m_Shader: {fileID: 4, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: af579c7a89d15d24eb8c925a43a236cf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: f5d1de47f0f760544a5596ceb8cc895f, type: 3}
+        m_Scale: {x: 6.25, y: 1.25}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Shininess: 0.037224755
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecColor: {r: 0.31617647, g: 0.24030025, b: 0.19063582, a: 1}
 --- !u!1 &1904658713
 GameObject:
   m_ObjectHideFlags: 0
@@ -3452,6 +4473,7 @@ GameObject:
   - component: {fileID: 1904658716}
   - component: {fileID: 1904658715}
   - component: {fileID: 1904658714}
+  - component: {fileID: 1904658718}
   m_Layer: 0
   m_Name: Path (17)
   m_TagString: Floor
@@ -3486,7 +4508,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 62752644d94154c52a8ffaee15a909bd, type: 2}
+  - {fileID: 1369403469}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3526,6 +4548,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1904658718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1904658713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f7dd2158042245d8931c9dfcbde35c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texture: {fileID: 2800000, guid: cd4f831376722b54bbadd59ef7c6c744, type: 3}
+  textureToMeshZ: 8
 --- !u!1 &1920763098
 GameObject:
   m_ObjectHideFlags: 0
@@ -3573,7 +4608,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.9098039}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3606,6 +4641,7 @@ GameObject:
   - component: {fileID: 1940164547}
   - component: {fileID: 1940164546}
   - component: {fileID: 1940164545}
+  - component: {fileID: 1940164549}
   m_Layer: 0
   m_Name: Path (9)
   m_TagString: Floor
@@ -3640,7 +4676,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 62752644d94154c52a8ffaee15a909bd, type: 2}
+  - {fileID: 1105001186}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3680,6 +4716,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1940164549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1940164544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f7dd2158042245d8931c9dfcbde35c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texture: {fileID: 2800000, guid: cd4f831376722b54bbadd59ef7c6c744, type: 3}
+  textureToMeshZ: 8
 --- !u!1001 &1975736436
 Prefab:
   m_ObjectHideFlags: 0
@@ -3731,9 +4780,53 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 4211147063264764, guid: cfe91f4c5d7d143c4823ba7f24cfd26b, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4211147063264764, guid: cfe91f4c5d7d143c4823ba7f24cfd26b, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 23732907254103452, guid: cfe91f4c5d7d143c4823ba7f24cfd26b,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a4d708ac6deec4297978b80f16c8d35d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cfe91f4c5d7d143c4823ba7f24cfd26b, type: 2}
   m_IsPrefabAsset: 0
+--- !u!21 &2070495428
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: floor (Instance) (Instance) (Instance)
+  m_Shader: {fileID: 4, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: af579c7a89d15d24eb8c925a43a236cf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: f5d1de47f0f760544a5596ceb8cc895f, type: 3}
+        m_Scale: {x: 1.25, y: 3.75}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Shininess: 0.037224755
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecColor: {r: 0.31617647, g: 0.24030025, b: 0.19063582, a: 1}
 --- !u!1 &2099245559
 GameObject:
   m_ObjectHideFlags: 0
@@ -3806,6 +4899,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &2103370047
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: floor (Instance) (Instance) (Instance)
+  m_Shader: {fileID: 4, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: af579c7a89d15d24eb8c925a43a236cf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: f5d1de47f0f760544a5596ceb8cc895f, type: 3}
+        m_Scale: {x: 1.25, y: 6.25}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Shininess: 0.037224755
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecColor: {r: 0.31617647, g: 0.24030025, b: 0.19063582, a: 1}
 --- !u!1 &2134168279
 GameObject:
   m_ObjectHideFlags: 0
@@ -3817,6 +4941,7 @@ GameObject:
   - component: {fileID: 2134168282}
   - component: {fileID: 2134168281}
   - component: {fileID: 2134168280}
+  - component: {fileID: 2134168284}
   m_Layer: 0
   m_Name: Path (16)
   m_TagString: Floor
@@ -3851,7 +4976,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 62752644d94154c52a8ffaee15a909bd, type: 2}
+  - {fileID: 957951774}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3891,3 +5016,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2134168284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2134168279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f7dd2158042245d8931c9dfcbde35c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texture: {fileID: 2800000, guid: cd4f831376722b54bbadd59ef7c6c744, type: 3}
+  textureToMeshZ: 8
