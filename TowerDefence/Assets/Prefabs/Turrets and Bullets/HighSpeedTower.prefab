@@ -38,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1761953996963334}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.02, y: 0.13, z: -0.49}
+  m_LocalPosition: {x: -1.2835592, y: 2.129, z: 9.622107}
   m_LocalScale: {x: 0.2, y: 0.5, z: 0.2}
   m_Children: []
   m_Father: {fileID: 0}
@@ -59,6 +59,8 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
+  - {fileID: 2100000, guid: 65accd866463a407ca7994f1e3ed1922, type: 2}
+  - {fileID: 2100000, guid: a3c50a0f7bb324f1f86bd3578c3d7009, type: 2}
   - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -85,7 +87,7 @@ MeshFilter:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1761953996963334}
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 4300000, guid: 32deb8691f630427ba004b7ef1903a40, type: 3}
 --- !u!114 &114934294044790174
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -114,7 +116,6 @@ MonoBehaviour:
   Cost: 120
   Range: 5
   PlaceRange: 0.15
-  Summoner: {fileID: 0}
   TargetAcquired: 0
   CurrentTarget: {fileID: 0}
 --- !u!136 &136731610056463936

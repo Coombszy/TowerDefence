@@ -10,10 +10,8 @@
         public GameObject TurretTypeBox;
         public GameObject PlayerBase;
         public GameObject GoldStashBox;
-        // Use this for initialization
-        void Start () {
-        
-        }
+        public GameObject GameCamera;
+
         void Update () {
             if (Input.GetMouseButtonDown(0))
             {
@@ -44,7 +42,9 @@
         }
         private void Summon(int Type)
         {
-            Vector3 spawnPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);spawnPosition.y = 0.0f;
+            //Vector3 spawnPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);spawnPosition.y = 0.0f; // USE THIS FOR ORTHOGRAPHIC CAMERA TYPE
+            Vector2 MousePos = Input.mousePosition;
+            Vector3 spawnPosition = Camera.main.ScreenToWorldPoint(new Vector3(MousePos.x, MousePos.y, Camera.main.transform.position.y));
             if(isLocationSafe(spawnPosition))
             {
                 if(PlayerBase.GetComponent<BaseHandler>().Gold-objectsToSpawn[Type].GetComponent<TurretHandler>().Cost >= 0)
@@ -55,7 +55,6 @@
                 }
             }
         }
-
         private void UpdateTurretTypeBox()
         {
             TurretTypeBox.GetComponent<Text>().text = "TurrType:"+TypeNum;
