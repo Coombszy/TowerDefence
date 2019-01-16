@@ -11,6 +11,11 @@
         public GameObject PlayerBase;
         public GameObject GoldStashBox;
         public GameObject GameCamera;
+        void Start ()
+        {
+            UpdateGoldStashBox();
+            UpdateTurretTypeBox();
+        }
 
         void Update () {
             if (Input.GetMouseButtonDown(0))
@@ -57,7 +62,7 @@
         }
         private void UpdateTurretTypeBox()
         {
-            TurretTypeBox.GetComponent<Text>().text = "TurrType:"+TypeNum;
+            TurretTypeBox.GetComponent<Text>().text = "TurrType:"+objectsToSpawn[TypeNum].GetComponent<TurretHandler>().Name;
         }
         public void UpdateGoldStashBox()
         {

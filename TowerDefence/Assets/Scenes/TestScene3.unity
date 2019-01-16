@@ -98,15 +98,15 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 0.075
-    agentHeight: 0.075
+    agentRadius: 0.03
+    agentHeight: 0.03
     agentSlope: 45
     agentClimb: 0.1
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     minRegionArea: 2
     manualCellSize: 0
-    cellSize: 0.025
+    cellSize: 0.01
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
@@ -851,9 +851,9 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 20
-  field of view: 60
-  orthographic: 1
+  far clip plane: 70
+  field of view: 20
+  orthographic: 0
   orthographic size: 5.8153243
   m_Depth: -1
   m_CullingMask:
@@ -877,7 +877,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 364898411}
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: 0, y: 10, z: 0.79}
+  m_LocalPosition: {x: 0, y: 35, z: 0.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1262,8 +1262,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -40}
-  m_SizeDelta: {x: 200, y: 30}
+  m_AnchoredPosition: {x: 150, y: -40}
+  m_SizeDelta: {x: 500, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &483000838
 MonoBehaviour:
@@ -1297,7 +1297,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: TurrType:0
+  m_Text: 'TurrType:'
 --- !u!222 &483000839
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4315,10 +4315,12 @@ MonoBehaviour:
   objectsToSpawn:
   - {fileID: 1922929263362374, guid: cb7ba783897c8417b85523bb9d17a889, type: 2}
   - {fileID: 1761953996963334, guid: 8f9816383f79145eba5afd0e4a9601e5, type: 2}
-  TypeNum: 1
+  - {fileID: 1755255261551496, guid: f21f7ba7130e3462e8032e480a153654, type: 2}
+  TypeNum: 0
   TurretTypeBox: {fileID: 483000836}
   PlayerBase: {fileID: 92376973}
   GoldStashBox: {fileID: 1727261824}
+  GameCamera: {fileID: 364898411}
 --- !u!21 &1887628669
 Material:
   serializedVersion: 6
@@ -4474,14 +4476,14 @@ RectTransform:
   m_GameObject: {fileID: 1920763098}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.2, z: 0.1}
+  m_LocalScale: {x: 0.15, y: 0.2, z: 0.1}
   m_Children: []
   m_Father: {fileID: 1882447024}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 250, y: -100}
+  m_AnchoredPosition: {x: 325, y: -100}
   m_SizeDelta: {x: 2670, y: 856}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1920763100

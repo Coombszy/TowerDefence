@@ -10,6 +10,7 @@ public class TurretHandler : MonoBehaviour {
 	public float PlaceRange = 0.4f;
 	public bool TargetAcquired = false;
 	public GameObject CurrentTarget = null;
+	public string Name;
 
 	private Vector3 MyLocation = new Vector3();
 
