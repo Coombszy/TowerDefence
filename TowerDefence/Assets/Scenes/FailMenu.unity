@@ -1484,7 +1484,7 @@ GameObject:
   - component: {fileID: 507424003}
   - component: {fileID: 507424002}
   m_Layer: 5
-  m_Name: Logo
+  m_Name: You Died
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2500,7 +2500,7 @@ GameObject:
   - component: {fileID: 1153246122}
   - component: {fileID: 1153246121}
   m_Layer: 5
-  m_Name: LVL1
+  m_Name: Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2581,7 +2581,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2795,7 +2795,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: DEBUG - LVL1
+  m_Text: Main Menu
 --- !u!222 &1218673830
 CanvasRenderer:
   m_ObjectHideFlags: 0
